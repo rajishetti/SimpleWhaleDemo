@@ -23,7 +23,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: 65fda7e3b4aeb4c5e4b93a00e453329869b5e011
+          password: ${{ secrets.CR_PAT }}
 
       - name: Build and push
         id: docker_build
